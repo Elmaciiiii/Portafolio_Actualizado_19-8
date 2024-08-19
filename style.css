@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* *********************/
+/* seccion I N I C I O */
+/* *********************/
+
+#inicio {
+    background: linear-gradient(rgba(36, 36, 36, 0.425), rgba(36, 36, 36, 0.47)), url("imagenes/fondo_inicio.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, 0.605);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 85px;
+}
+
+#inicio .contenido header .contenido-header nav {
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li {
+    padding: 0 20px; /* Usar padding en lugar de margin */
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    position: relative; /* Necesario para el efecto del botón */
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #ffffff;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    padding: 1em;
+    position: relative;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fcfcfc;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+
+.button:hover {
+    color: black;
+    transition-delay: 0.5s;
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    transition: 0.2s ease;
+    z-index: -2;
+    border-radius: 3px 3px 0 0;
+}
+
+.button:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    background-color: rgb(1, 98, 122);
+}
+
+#inicio .contenido header .contenido-header .redes {
+    display: flex; 
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: #2b9b92b5;
+    font-weight: 600;
+}
+
+#inicio .contenido .presentacion {
+    max-width: 900px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px; 
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #2b9b92b5;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio a la derecha del icono */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    #inicio .contenido header .contenido-header {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #inicio .contenido header .contenido-header nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 85px; /* Ajusta el valor para que esté justo debajo del header */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        margin: 0;
+        padding: 0;
+        z-index: 99;
+    }
+
+    #inicio .contenido header .contenido-header nav ul li {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    #inicio .contenido header .contenido-header nav ul.activo {
+        display: flex;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    /* Asegurar que las redes estén alineadas horizontalmente y no se superpongan */
+    #inicio .contenido header .contenido-header .redes {
+        margin-left: auto; /* Empuja las redes al final del flex container */
+    }
+}
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style2.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .buttom {
+      background-color:#9b69ff;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px; /* Espacio entre botones */
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    
+    .buttom:hover {
+      background-color: #5800aa;
+    }
+  
+    </style>
+    <header>
+        <a href="index.html" class="buttom">Volver a Inicio</a>
+      </header>
+
+    <h1>Añadir Canciones</h1> 
+    <section class="Añadir">
+        <form action="index3.php" method="post">
+            <label class="control" for="duracion">Duración:</label>
+            <input type="text" id="duracion" name="duracion" placeholder="00:00:00" required placeholder="Ingrese Duración"><br>
+
+            <label class="control" for="ano_composicion">Año de Composición:</label>
+            <input type="number" id="ano_composicion" name="ano_composicion" required placeholder="Ingrese Año de Composición"><br>
+
+            <label class="control" for="genero">Género:</label>
+            <input type="text" id="genero" name="genero" required  placeholder="Ingrese Género"><br>
+
+            <label class="control" for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required placeholder="Ingrese Título"><br>
+            
+            <label class="control" for="compositor">Nombre del Compositor:</label>
+            <input type="text" id="compositor" name="compositor" required placeholder="Ingrese Nombre del Compositor"><br>
+
+            <label class="control" for="url">URL de la canción:</label>
+            <input type="text" id="url" name="url_cancion" required>
+
+
+            <input class="toto" type="submit" value="Añadir Cancion">
+        </form>
+</section>
+</body>
+</html>

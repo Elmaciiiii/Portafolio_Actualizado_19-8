@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Portafolio</title>
+    <link rel="icon" href="imagenes/logo.png">
+</head>
+<body>
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav">
+                        <div id="icono-nav" onclick="toggleMenu()">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <ul id="links">
+                            <li><a class="button" href="index.html" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a class="button" href="sobremi.html" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a class="button" href="habilidades.html" id="habilidadesLink" onclick="seleccionar(this)">HABILIDADES</a></li>
+
+                            <li><a class="button" href="index2.html" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a class="button" href="contacto.html" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+    
+                    <div class="redes">
+                        <a href="https://www.instagram.com/max1.soto/" target="_blank"><i class="fa fa-instagram" ></i></a>
+                        <a href="https://www.youtube.com/channel/UCmPR1e8G_p6kN584L8wLaLQ" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://twitter.com/maxisoto2506" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+
+    
+    <!-- SECCTION C O N T A C T O -->
+ <section id="contacto">
+    <h3 class="titulo-seccion">Contáctanos ahora</h3>
+    <div class="contenedor-form">
+        <form action="https://formsubmit.co/nahiara.sassone06@gmail.com" method="POST" id="contactForm">
+            <div class="fila mitad">
+                <input type="text" name="name" id="nombre" placeholder="Nombre Completo *" class="input-mitad" required>
+                <input type="email" name="email" id="email" placeholder="Dirección de Email" class="input-mitad" required>
+            </div>
+            <div class="fila">
+                <input type="text" name="tema" id="tema" placeholder="Tema..." class="entrada-llena" required>
+            </div>
+            <div class="fila">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+             <input type="hidden" name="_next" value="http://127.0.0.1:5501/contacto.html">
+
+             <input type="hidden" name="_captcha" value="false">
+
+
+
+        </form>
+    </div>
+</section>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

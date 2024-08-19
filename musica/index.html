@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .buttom {
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px; /* Espacio entre botones */
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    
+    .buttom:hover {
+      background: linear-gradient(to right, #814cb5, #055285);
+    }
+  
+  
+
+   
+    </style>
+    
+    <header>
+        <h1>MUSICA</h1>
+        
+        <div>   
+                <a href="index2.html" class="buttom">Añadir cancion</a>
+                <a href="album.php" class="buttom">Cantantes</a>
+
+
+
+                
+        </div> 
+
+       
+        <section id="busqueda" class="pepe">
+            <h2>Búsqueda de Canciones</h2>
+            <form action="busqueda.php" method="post">
+                <input type="text" name="termino_busqueda" placeholder="Buscar por título, compositor o género">
+                <input class="momo" type="submit" value="Buscar">
+            </form>
+        </section>
+    
+
+    </header>
+
+
+
+</body>
+</html>

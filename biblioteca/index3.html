@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style3.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient( rgba(36, 36, 36, 0.425), rgba(36, 36, 36, 0.47)), url("ttt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(126, 126, 126, 0.701);
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 470px;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+.toto{
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 495px;
+  
+}
+
+.buttom {
+    background-color: #382b03;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px; 
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .buttom:hover {
+    background-color: #3f2c05;
+  }
+
+ p {
+    color: #fff!important;
+    font-size: 20px;
+    letter-spacing: -1px;
+    padding: 1px;
+    margin: 3px;
+}
+
+.lola{
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 495px;
+    text-align: center;
+    padding: 10px;
+}
+
+div{
+    background-color: rgba(123, 118, 118, 0.5);
+    padding: 60px;
+    color: #fff;
+    margin: 90px auto;
+    width: 500px;;
+    border-radius: 10px;
+    font-size: 26px; 
+    
+}
+ 
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="buttom">Volver a Inicio</a>
+      </header>
+
+    <h1>Añadir Libro</h1> 
+    <section class="Añadir">
+        <form action="index4.php" method="post">
+            <label class="control" for="title"> Título:</label>
+            <input type="text" id="title" name="title" required  placeholder="Ingrese Titulo"><br>
+
+            <label class="control" for="author">Autor:</label>
+            <input type="text" id="author" name="author" required  placeholder="Ingrese Autor"><br>
+
+            <label class="control" for="genre">Género:</label>
+            <input type="text" id="genre" name="genre" required  placeholder="Ingrese Género"><br>
+
+            <label class="control" for="year">Año de Publicación:</label>
+            <input type="number" id="year" name="year" required  placeholder="Ingrese año de publicacion" ><br>
+            
+            <label class="control" for="editorial">Editorial:</label>
+            <input type="text" id="editorial" name="editorial" required  placeholder="Ingrese Editorial" ><br>
+
+            <label class="control"   for="disponibilidad">Disponibilidad:</label>
+            <select class="lola" name="disponibilidad" id="">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select><br>
+            <br>
+
+            <input class="toto" type="submit" value="Añadir Libro">
+        </form>
+</section>
+
+</body>
+</html>
